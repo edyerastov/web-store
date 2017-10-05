@@ -11,7 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- jQuery styles -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="css/slicknav.css">
@@ -51,12 +51,12 @@
         <div class="container">
             <div class="flex-container justify-sp-between">
                 <div class="logo">
-                    <a href="">
+                    <a href="index.html">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
                 <ul class="bottom-header-nav flex-container align-center">
-                    <li><a href="">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="category.html">Products</a></li>
                     <li><a href="">Hot Deals</a></li>
                     <li><a href="">About</a></li>
@@ -82,75 +82,103 @@
 
 <!-- MAIN START -->
 <main>
-    <section class="items-carousel flex-container align-center">
+    <div class="product-wrap white-bg">
         <div class="container">
-            <div class="item-flexslider">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="items-carousel-description">
-                                <div class="title title-big orange-text">
-                                    <span>FULL WINTER KIT</span>
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <div class="product-title title title-big orange-text text-center hidden-lg hidden-md">
+                        <span>FULL WINTER KIT</span>
+                    </div>
+                    <div class="product-carousel center-block">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li data-thumb="img/slider-img.png">
+                                    <img src="img/slider-img.jpg" />
+                                </li>
+                                <li data-thumb="img/slider-img.png">
+                                    <img src="img/slider-img.jpg" />
+                                </li>
+                                <li data-thumb="img/slider-img.png">
+                                    <img src="img/slider-img.jpg" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <div class="product-info-description">
+                        <div class="product-title title title-big orange-text hidden-xs hidden-sm">
+                            <span>FULL WINTER KIT</span>
+                        </div>
+                        <div class="product-subtitle subtitle">
+                            <span>
+                                Half Jacket + Skiny Trousers + Boot leather
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="product-subtext subtext">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, doloribus facere maxime perspiciatis sit sunt veritatis vitae voluptates. Ab animi autem cumque dignissimos laboriosam non nulla officiis, quam tempore vitae.</p>
                                 </div>
-                                <span class="text-description">Half Jacket + Skiny Trousers + Boot leather</span>
-                                <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequuntur distinctio dolorum</span>
-                                <ul class="price">
-                                    <li>Price: 120$</li>
-                                    <li>
-                                        <a href="" class="orange-text"><span class="custom-icon icon-cart-hover-ic"></span>Order Now</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="items-carousel-description">
-                                <div class="title title-big orange-text">
-                                    <span>FULL WINTER KIT</span>
-                                </div>
-                                <span class="text-description">Half Jacket + Skiny Trousers + Boot leather</span>
-                                <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequuntur distinctio dolorum</span>
-                                <ul class="price">
-                                    <li>Price: 120$</li>
-                                    <li>
-                                        <a href="" class="orange-text"><span class="custom-icon icon-cart-hover-ic"></span>Order Now</a>
-                                    </li>
-                                </ul>
+                    </div>
+                    <div class="product-description">
+                        <div class="order-info">
+                            <div class="order-form">
+                                <form id="product-option" class="flex-container justify-sp-between">
+                                    <div class="chose-size product-subtitle flex-container align-center">
+                                        <span>Choos Size</span>
+                                        <div class="size-radio-btn-group flex-container align-center">
+                                            <div class="size-radio">
+                                                <input type="radio" name="radio" id="sSize">
+                                                <label for="sSize">s</label>
+                                            </div>
+                                            <div class="size-radio dash">
+                                                <input type="radio" name="radio" id="mSize">
+                                                <label for="mSize">m</label>
+                                            </div>
+                                            <div class="size-radio dash">
+                                                <input type="radio" name="radio" id="lSize" checked>
+                                                <label for="lSize">l</label>
+                                            </div>
+                                            <div class="size-radio dash">
+                                                <input type="radio" name="radio" id="xlSize">
+                                                <label for="xlSize">xl</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-border flex-container hidden-xs"></div>
+                                    <div class="quantity product-subtitle flex-container align-center">
+                                        <span>Choos Quantity</span>
+                                        <input type="number" name="quantity" class="custom-number" min="1" value="1">
+                                    </div>
+                                </form>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="items-carousel-description">
-                                <div class="title title-big orange-text">
-                                    <span>FULL WINTER KIT</span>
+                            <div class="order-now flex-container align-center justify-sp-between">
+                                <div class="product-price">
+                                    <span>Price:</span>
+                                    <span> 120$</span>
                                 </div>
-                                <span class="text-description">Half Jacket + Skiny Trousers + Boot leather</span>
-                                <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequuntur distinctio dolorum</span>
-                                <ul class="price">
-                                    <li>Price: 120$</li>
-                                    <li>
-                                        <a href="" class="orange-text"><span class="custom-icon icon-cart-hover-ic"></span>Order Now</a>
-                                    </li>
+                                <ul class="product-share item-controls flex-container align-center">
+                                    <li><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
+                                    <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></a></li>
+                                    <li><a href=""><span class="custom-icon icon-like-ic"></span></a></a></li>
                                 </ul>
+                                <input type="submit" value="Order now" form="product-option" class="btn btn-default btn-radius">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="default-section new-arrivals">
+    </div>
+    <section class="related-products default-section">
         <div class="container">
             <div class="title text-center">
-                <span><span class="orange-text">NEW</span>ARRIVALS</span>
+                <span><span class="orange-text">RELATED </span>PRODUCTS</span>
             </div>
-            <span class="subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequuntur distinctio dolorum</span>
+            <span class="subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
             <div class="new-items">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
@@ -287,155 +315,6 @@
                     </div>
                 </div>
             </div>
-            <div class="load-more text-center">
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
-            </div>
-        </div>
-    </section>
-    <section class="winter-kit default-section ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-xs-12">
-                    <div class="winter-kit-left white-bg flex-container align-center justify-sp-between">
-                        <div class="sale-box flex-container align-center">
-                            <div class="sale-block flex-container align-center">
-                                <div class="light-orange-bg"></div>
-                                <div class="orange-bg"></div>
-                            </div>
-                            <div class="sales-value flex-container align-center">
-                                <span>Sale</span>
-                                <span>50%</span>
-                            </div>
-                        </div>
-                        <div class="sale-text-section">
-                            <span class="sale-text-title">FULL WINTER KIT</span>
-                            <span class="sale-text-subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
-                        </div>
-                        <div class="border hidden-md hidden-sm hidden-xs"></div>
-                        <div class="sale-price-section">
-                            <span class="custom-icon icon-add-to-cart-hover-ic" ></span>
-                            <span class="sale-price orange-text"> 120$</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 col-xs-12">
-                    <div class="winter-kit-right white-bg flex-container align-center">
-                        <div class="winter-kit-right-text">
-                            <span>adv</span><span class="orange-text"> area</span>
-                        </div>
-                        <div class="winter-kit-size">
-                            <span>470 x 100</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="best-sales default-section">
-        <div class="title text-center">
-            <span><span class="orange-text">BEST </span>BEST</span>
-        </div>
-        <span class="subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
-        <div class="best-sales-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="item-mini best-sales-subtitle flex-container align-center justify-sp-between">
-                            <div class="item-mini-img">
-                                <a href="">
-                                    <img src="img/item-img-1-min.png" alt="">
-                                </a>
-                            </div>
-                            <div class="item-mini-description">
-                                <div class="item-mini-title">
-                                    <a href=""><span>Reebok Track Jacket</span></a>
-                                </div>
-                                <div class="item-mini-info flex-container align-center justify-sp-between">
-                                    <div class="item-mini-stars">
-                                        <ul class="flex-container">
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star light-gray-text" aria-hidden="true"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="item-mini-price">
-                                        <span class="orange-text">100$</span>
-                                    </div>
-                                    <div class="add-to-cart-hover flex-container justify-sp-around align-center">
-                                        <span class="custom-icon icon-add-to-cart-hover-ic"></span>
-                                        <span class="orange-text">add to cart</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="item-mini best-sales-subtitle flex-container align-center justify-sp-between">
-                            <div class="item-mini-img">
-                                <a href="">
-                                    <img src="img/item-img-1-min.png" alt="">
-                                </a>
-                            </div>
-                            <div class="item-mini-description">
-                                <div class="item-mini-title">
-                                    <a href=""><span>Reebok Track Jacket</span></a>
-                                </div>
-                                <div class="item-mini-info flex-container align-center justify-sp-between">
-                                    <div class="item-mini-stars">
-                                        <ul class="flex-container">
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star light-gray-text" aria-hidden="true"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="item-mini-price">
-                                        <span class="orange-text">100$</span>
-                                    </div>
-                                    <div class="add-to-cart-hover flex-container justify-sp-around align-center">
-                                        <span class="custom-icon icon-add-to-cart-hover-ic"></span>
-                                        <span class="orange-text">add to cart</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 hidden-xs hidden-sm">
-                        <div class="item-mini best-sales-subtitle flex-container align-center">
-                            <div class="item-mini-img">
-                                <a href="">
-                                    <img src="img/item-img-1-min.png" alt="">
-                                </a>
-                            </div>
-                            <div class="item-mini-description">
-                                <div class="item-mini-title">
-                                    <a href=""><span>Reebok Track Jacket</span></a>
-                                </div>
-                                <div class="item-mini-info flex-container align-center justify-sp-between">
-                                    <div class="item-mini-stars">
-                                        <ul class="flex-container">
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star orange-text" aria-hidden="true"></i></li>
-                                            <li><i class="fa fa-star light-gray-text" aria-hidden="true"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="item-mini-price">
-                                        <span class="orange-text">100$</span>
-                                    </div>
-                                    <div class="add-to-cart-hover flex-container justify-sp-around align-center">
-                                        <span class="custom-icon icon-add-to-cart-hover-ic"></span>
-                                        <span class="orange-text">add to cart</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section class="subscribe default-section">
@@ -462,8 +341,8 @@
 </main>
 <!-- MAIN END -->
 <!-- FOOTER START -->
-<footer class="default-section">
-        <div class="default-section white-bg">
+<footer>
+    <div class="default-section white-bg">
         <div class="container">
             <div class="row footer-content">
                 <div class="col-lg-4 col-sm-3 col-xs-12">
@@ -513,7 +392,6 @@
     </div>
 </footer>
 <!-- FOOTER END -->
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

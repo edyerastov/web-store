@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- jQuery styles -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- HEADER START -->
+<header class="header">
+    <div class="top-header">
+        <div class="container">
+            <div class="flex-container justify-sp-between">
+                <ul class="phone-list flex-container align-center">
+                    <li class="flex-container align-center"><span class="custom-icon icon-mail-ic"></span>info@shopy.com</li>
+                    <li class="flex-container align-center"><span class="custom-icon icon-phone-book-ic"></span>966 - 5553 - 453</li>
+                </ul>
+                <nav>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="container">
+            <div class="flex-container justify-sp-between">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="bottom-header-nav flex-container align-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Hot Deals</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <ul class="user-controls flex-container align-center">
+                    <li class="flex-container align-center">
+                        <a href="" class="custom-icon icon-search-ic"></a>
+                    </li>
+                    <li class="flex-container align-center">
+                        <a href="" class="custom-icon icon-user-ic"></a>
+                    </li>
+                    <li class="flex-container align-center">
+                        <a href="" class="custom-icon icon-cart-ic"></a>
+                        <span class="basket-count">5</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER END -->
+
+<!-- MAIN START -->
+<main>
+    <div class="category-wrap">
+        <div class="container">
+            <div class="mobile-sidebar-btn">
+                <i class="fa fa-arrow-circle-right"></i>
+            </div>
+            <div class="overlay"></div>
+            <div class="row">
+                <div class="col-md-3 col-xs-12 mobile-sidebar-wrap">
+                    <aside class="side-bar">
+                        <div class="aside-section white-bg">
+                            <div class="aside-section-title orange-text">
+                                <span>Categories</span>
+                            </div>
+                            <ul class="categories-section">
+                                <li><a href="">Man</a></li>
+                                <li><a href="">Woman</a></li>
+                                <li><a href="">Children</a></li>
+                                <li><a href="">Hot Deals</a></li>
+                            </ul>
+                        </div>
+                        <div class="aside-section white-bg">
+                            <div class="aside-section-title orange-text">
+                                <span>Price Filter</span>
+                            </div>
+                            <div class="range">
+                                <div id="slider-range"></div>
+                                <div class="add-range-value flex-container" >
+                                    <div class="range-input-reoup">
+                                        <label for="fromValue">From</label>
+                                        <input type="number" name="fromValue" id="fromValue" min="0">
+                                    </div>
+                                    <div class="range-input-reoup">
+                                        <label for="toValue">To</label>
+                                        <input type="number" name="toValue" id="toValue" min="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside-section white-bg">
+                            <div class="aside-section-title orange-text">
+                                <span>Sizes</span>
+                            </div>
+                            <form>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeSmall" id="sizeSmall" checked>
+                                    <label for="sizeSmall">Small</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeMedium" id="sizeMedium">
+                                    <label for="sizeMedium">Medium</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeLarge" id="sizeLarge">
+                                    <label for="sizeLarge">Large</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeXLarge" id="sizeXLarge">
+                                    <label for="sizeXLarge">X large</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="aside-section white-bg">
+                            <div class="aside-section-title orange-text">
+                                <span>Brands</span>
+                            </div>
+                            <form>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeReebok" id="sizeReebok" checked>
+                                    <label for="sizeReebok">Reebok</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeAdidas" id="sizeAdidas">
+                                    <label for="sizeAdidas">Adidas</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeNike" id="sizeNike">
+                                    <label for="sizeNike">Nike</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="sizeActive" id="sizeActive">
+                                    <label for="sizeActive">Active</label>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-md-9 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 hidden-sm">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 hidden-sm">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 hidden-sm">
+                            <div class="product-item">
+                                <div class="item-img">
+                                    <a href="product.html">
+                                        <img src="img/item-img-3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-description">
+                                    <div class="item-title">
+                                        <a href="product.html">Reebok Track Jacket</a>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="orange-text">100$</span>
+                                    </div>
+                                </div>
+                                <div class="more-info-on-hover">
+                                    <div class="size">
+                                        sizes    :    s - m - l - xl
+                                    </div>
+                                    <ul class="colors">
+                                        <li class="red-bg"></li>
+                                        <li class="black-bg"></li>
+                                        <li class="blue-bg"></li>
+                                        <li class="green-bg"></li>
+                                    </ul>
+                                    <ul class="item-controls">
+                                        <li><a href="" class="custom-icon icon-share-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-add-to-cart-ic"></a></li>
+                                        <li><a href="" class="custom-icon icon-like-ic"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="load-more text-center">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="subscribe default-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="subscribe-form white-bg flex-container align-center justify-sp-between">
+                        <div class="subscribe-description flex-container">
+                            <span class="subscribe-description-title orange-text">NEWS LETTER</span>
+                            <span class="subscribe-description-text">join us now to get all news and special offers</span>
+                        </div>
+                        <form class="subscribe-join flex-container align-center">
+                            <div class="subscribe-input-group">
+                                <label for="subscribeEmail" class="custom-icon icon-mail-ic"></label>
+                                <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="type your email here">
+                            </div>
+                            <button class="join-us btn btn-default">join us</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- MAIN END -->
+
+<!-- FOOTER START -->
+<footer>
+    <div class="default-section white-bg">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-lg-4 col-sm-3 col-xs-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <span class="copyright">shopy c 2015 . your copy right here</span>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <div class="row footer-list">
+                        <div class="col-xs-4">
+                            <ul class="footer-list">
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">contact us</a></li>
+                                <li><a href="#">support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <ul class="footer-list">
+                                <li><a href="#">our feed</a></li>
+                                <li><a href="#">terms and conditions</a></li>
+                                <li><a href="#">our privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <ul class="footer-list">
+                                <li><a href="#">join us</a></li>
+                                <li><a href="#">live support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-3 col-xs-12">
+                    <div class="payment-title">
+                        <span class="orange-text">Payment Methods</span>
+                    </div>
+                    <div class="payment-methods">
+                        <span class="custom-icon icon-amex-ic"></span>
+                        <span class="custom-icon icon-no-name-cart-1-ic"></span>
+                        <span class="custom-icon icon-visa-ic"></span>
+                        <span class="custom-icon icon-master-cart-ic"></span>
+                        <span class="custom-icon icon-no-name-cart-2-ic"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER END -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/plugins.min.js"></script>
+</body>
+</html>
